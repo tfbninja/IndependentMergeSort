@@ -1,5 +1,7 @@
 package mergesort;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Tim Barber
@@ -8,7 +10,14 @@ public class MergeSort {
 
     public static void main(String[] args) {
         System.out.println("\nTim Barber\tOct 2018\tAPCS"); //Header
-
+        int size = 26;
+        ArrayList<Integer> test = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+            test.add((int) (Math.random() * size));
+        }
+        System.out.println(test);
+        Sorter tester = new Sorter(test);
+        System.out.println(tester);
     }
 
 }
